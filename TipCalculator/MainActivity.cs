@@ -7,9 +7,9 @@ using AndroidX.AppCompat.App;
 namespace TipCalculator
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
-    public class MainActivity : AppCompatActivity
+    public class MainActivity : Activity
     {
-        int count = 0;  
+        private int count = 0;  
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
