@@ -4,14 +4,14 @@
              x:Class="Controls.Pages.EditorPage">
     <ContentPage.Content>
         <StackLayout>
-            <Editor Placeholder="Eingabe..."
+            <Editor x:Name="EditorforU"
+                    AutoSize="TextChanges"
+                    Placeholder="Eingabe..."
                     TextTransform="Uppercase"
                     IsTextPredictionEnabled="True"
                     IsSpellCheckEnabled="False"/>
+         
             
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
             
         </StackLayout>
     </ContentPage.Content>

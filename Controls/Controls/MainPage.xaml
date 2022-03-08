@@ -25,6 +25,27 @@
                 HorizontalOptions="FillAndExpand"
                 Margin="5"
                 Clicked="btnEntryButton_Clicked"/>
+        
+        <Button x:Name="btnEditor"
+                Text="Button"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand"
+                Margin="5"
+                Clicked="btnEditor_Clicked"/>
+        
+        <Button x:Name="btnRadioButton"
+                Text="Button"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand"
+                Margin="5"
+                Clicked="btnRadioButton_Clicked"/>
+        
+        <Button x:Name="btnCheck"
+                Text="Button"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand"
+                Margin="5"
+                Clicked="btnCheck_Clicked"/>
     </StackLayout>
 
 </ContentPage>

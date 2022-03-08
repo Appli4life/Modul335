@@ -10,16 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace Controls.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ButtonPage : ContentPage
+    public partial class CheckPage : ContentPage
     {
-        public ButtonPage()
+        public CheckPage()
         {
             InitializeComponent();
-        }
-
-        private async void Button_Clicked(object sender, EventArgs e)
-        {
-            await label.RelRotateTo(360, 1000);
         }
     }
 }

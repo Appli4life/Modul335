@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Controls.Pages.RadioButtonPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="What is your favorite animal?"/>
+            <RadioButton Content="Cat" Value="1"/>
+            <RadioButton Content="Dog" Value="2"/>
+            <RadioButton Content="Elephant" Value="3"/>
+            <RadioButton Content="Monkey" Value="4"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
