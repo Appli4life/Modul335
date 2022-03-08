@@ -10,12 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace GruppeList.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CaruselPage : ContentPage
+    public partial class ListPage : ContentPage
     {
-        public CaruselPage()
+        public ListPage()
         {
             InitializeComponent();
         }
-
     }
 }
