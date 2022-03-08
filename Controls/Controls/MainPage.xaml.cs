@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Controls.Pages;
+using System;
 using Xamarin.Forms;
 
 namespace Controls
@@ -17,7 +13,12 @@ namespace Controls
 
         private void btnButton_Clicked(object sender, EventArgs e)
         {
+            Navigation.PushAsync(new ButtonPage());
+        }
 
+        private void btnEntryButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new EntryPage());
         }
     }
 }

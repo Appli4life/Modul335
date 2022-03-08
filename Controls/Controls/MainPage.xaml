@@ -18,6 +18,13 @@
                 HorizontalOptions="FillAndExpand"
                 Margin="5"
                 Clicked="btnButton_Clicked"/>
+
+        <Button x:Name="btnEntryButton"
+                Text="Button"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand"
+                Margin="5"
+                Clicked="btnEntryButton_Clicked"/>
     </StackLayout>
 
 </ContentPage>
