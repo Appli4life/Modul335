@@ -8,6 +8,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using GruppeList.Pages;
 
 namespace GruppeList
 {
@@ -17,7 +18,26 @@ namespace GruppeList
         public MainPage()
         {
             InitializeComponent();
-            
+        }
+
+        private void btnCarusel_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new CaruselPage());
+        }
+
+        private void btnList_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ListPage());
+        }
+
+        private void btnPiker_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new PikerPage());
+        }
+
+        private void btnTable_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new TablePage());
         }
     }
 }

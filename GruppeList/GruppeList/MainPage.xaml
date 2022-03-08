@@ -19,6 +19,35 @@
                 </FormattedString>
             </Label.FormattedText>
         </Label>
+
+        <Button x:Name="btnCarusel"
+                Text="Carusel"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand"
+                Margin="5"
+                Clicked="btnCarusel_Clicked"/>
+
+        <Button x:Name="btnList"
+                Text="List"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand"
+                Margin="5"
+                Clicked="btnList_Clicked"/>
+
+        <Button x:Name="btnPiker"
+                Text="Piker"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand"
+                Margin="5"
+                Clicked="btnPiker_Clicked"/>
+        
+        <Button x:Name="btnTable"
+                Text="Table"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand"
+                Margin="5"
+                Clicked="btnTable_Clicked"/>
+        
     </StackLayout>
 
 </ContentPage>

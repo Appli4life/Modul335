@@ -4,9 +4,25 @@
              x:Class="GruppeList.Pages.ListPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView ItemsSource="{Binding Monkeys}" IsVisible="true">
+                <ListView.Header>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Name" FontAttributes="Bold" FontSize="20"/>
+                        <Label Text="Image" FontAttributes="Bold" FontSize="20" HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Height="20">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Name}"/>
+                                <Image Source="{Binding Image}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
