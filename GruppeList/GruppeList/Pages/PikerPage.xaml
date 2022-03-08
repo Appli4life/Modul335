@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GruppeList.Pages.PikerPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <StackLayout>
+                <Label x:Name="lblTitle" Text="Pick a Country from the Picker" Font="Large"/>
+                <Label x:Name="lbldisp"></Label>
+                <Picker x:Name="Countries">
+                    <Picker.Items>
+                        <x:String>India</x:String>
+                        <x:String>United States</x:String>
+                        <x:String>Australia</x:String>
+                        <x:String>Bangladesh</x:String>
+                        <x:String>Canada</x:String>
+                        <x:String>China</x:String>
+                        <x:String>Germany</x:String>
+                        <x:String>Mauritius</x:String>
+                        <x:String>Nepal</x:String>
+                        <x:String>Brazil</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

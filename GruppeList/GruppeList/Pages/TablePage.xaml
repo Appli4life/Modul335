@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GruppeList.Pages.TablePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <TableView Intent="Settings">
+                <TableRoot>
+                    <TableSection Title="Getting Started">
+                        <ViewCell x:Name="Cell1">
+                            <StackLayout Orientation="Horizontal">
+
+                                <Label Text="left"
+TextColor="#f35e20" />
+                                <Label Text="right"
+HorizontalOptions="EndAndExpand"
+TextColor="#503026" />
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Entry Keyboard="Numeric" IsSpellCheckEnabled="True" IsTextPredictionEnabled="True" Placeholder="Geben sie Ihre Kreditkartennummer ein!"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Editor Keyboard="Chat" IsSpellCheckEnabled="True" IsTextPredictionEnabled="True" Placeholder="Ihren Ganzen Lebenslauf einfügen!" AutoSize="TextChanges"/>
+                            </StackLayout>
+
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
