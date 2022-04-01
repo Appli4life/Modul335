@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Styles.Pages.ExplicitStylePage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style  x:Key="lableRed" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="BackgroundColor" Value="Red"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="FontAttributes" Value="Italic"/>
+                <Setter Property="TextColor" Value="Khaki"/>
+            </Style>
+            <Style  x:Key="lableBlue" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="BackgroundColor" Value="Blue"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
+            <Style  x:Key="lableGreen" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="BackgroundColor" Value="Green"/>
+                <Setter Property="FontAttributes" Value="Italic"/>
+                <Setter Property="TextColor" Value="Red"/>
+            </Style>
+            <Style  x:Key="lableBlack" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="BackgroundColor" Value="Black"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="Yellow"/>
+                <Setter Property="Rotation" Value="180" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Styles"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Label Text="Label1 Text" Style="{StaticResource lableRed}"/>
+            <Label Text="Label2 Text" Style="{StaticResource lableBlue}"/>
+            <Label Text="Label3 Text" Style="{StaticResource lableGreen}"/>
+            <Label Text="Label4 Text" Style="{StaticResource lableBlack}"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

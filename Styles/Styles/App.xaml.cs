@@ -10,7 +10,7 @@ namespace Styles
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
@@ -22,7 +22,7 @@ namespace Styles
         }
 
         protected override void OnResume()
-        {
+        { 
         }
     }
 }

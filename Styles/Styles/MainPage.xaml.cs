@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Styles.Pages;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -13,6 +14,16 @@ namespace Styles
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private void btnExplicitStyle_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ExplicitStylePage());
+        }
+
+        private void btnImplicitStyle_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ExplicitStylePage());
         }
     }
 }
